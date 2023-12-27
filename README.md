@@ -21,10 +21,23 @@ Program to find the square root for the given number(newton's method) using func
 Developed by: 
 RegisterNumber:  
 */
+num=int(input())
+a=1e-6
+max=100
+
+guess=num/2.0
+for _ in range(max):
+    new=0.5*(guess+num/guess)
+    if abs(new-guess)<a:
+        break
+    guess=new
+print(f"Square root of the number: {new}")
 ```
 
 ## Output:
 ![gcd of two number](gcd.png)
+![image](https://github.com/srisrisaranya/Square-root-of-a-number/assets/148516638/26e0e91d-d484-4ef9-adf9-6f40b51e3ab3)
+
 
 
 ## Result:
